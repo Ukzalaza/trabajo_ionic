@@ -1,6 +1,6 @@
 module.exports = app => {
 
-    const tv = require("../controllers/tv.controllers.js");
+    const tv = require("../controllers/tv.controller.js");
 
     var router = require("express").Router();
 

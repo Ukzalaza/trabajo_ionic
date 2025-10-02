@@ -4,22 +4,22 @@ module.exports = (sequelize, Sequelize) => {
 
         brand: {
 
-            type: Sequelize.String
+            type: Sequelize.STRING
         },
 
         model: {
 
-            type: Sequelize.String
+            type: Sequelize.STRING
         },
 
         inches: {
 
-            type: Sequelize.Double
+            type: Sequelize.DOUBLE
         },
 
         scre: {
 
-            type: Sequelize.String
+            type: Sequelize.STRING
         },
 
     });
