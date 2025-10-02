@@ -4,7 +4,7 @@ const app = express();
 // Prueba hecha
 app.use(express.json());
 
-app.use(express.urlencoded({ extende: true}));
+app.use(express.urlencoded({ extended: true}));
 
 const db = require("./index.js");
 
@@ -50,7 +50,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 });
 
 
-const db = {};
+    const db = {};
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
