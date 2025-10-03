@@ -1,6 +1,6 @@
 module.exports = {
   HOST: "localhost",
-  USER: "root",
+  USER: "tito",
   PASSWORD: "1234",
   DB: "db_tvs",
   dialect: "mysql",
