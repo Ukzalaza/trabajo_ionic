@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  brand: string = "BH";
+  model: string = "star";
+  inches: string = "lola"
+  scre: string = "klk"
+
   constructor() {}
 
 }
