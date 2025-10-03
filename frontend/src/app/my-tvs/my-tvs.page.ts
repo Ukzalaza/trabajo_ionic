@@ -12,7 +12,7 @@ export class MyTvsPage implements OnInit {
   tvs: any = [
     {
       id: 1,
-      brand: "Samnsung",
+      brand: "Samsung",
       model: "TQ55S90DAEXXC",
       inches: "65",
       scre: "3840 x 2160"

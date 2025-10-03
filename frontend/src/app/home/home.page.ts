@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,12 @@ export class HomePage {
   inches: string = "lola"
   scre: string = "klk"
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+   gotoMyTvs(){
+
+     this.router.navigateByUrl("/my-tvs");
+
+   }
 
 }
