@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'my-tvs',
+    loadChildren: () => import('./my-tvs/my-tvs.module').then( m => m.MyTvsPageModule)
   },
+
 ];
 
 @NgModule({

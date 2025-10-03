@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>my-tvs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense"> -->
+    <!-- <ion-toolbar> -->
+      <!-- <ion-title size="large">my-tvs</ion-title> -->
+    <!-- </ion-toolbar> -->
+  <!-- </ion-header> -->
+
+<ion-list>
+
+  <ion-item *ngFor="let t of tvs">
+
+    <ion-label>
+    <h1>{{t.brand}} </h1>
+      <p>{{t.model}}</p>
+      <p>{{t.inches}}</p>
+      <p>{{t.scre}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+</ion-content>
