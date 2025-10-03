@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TvService } from '../services/tv-service';
 
 @Component({
   selector: 'app-my-tvs',
