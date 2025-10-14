@@ -10,26 +10,42 @@ import { TvService } from '../services/tv-service';
 export class MyTvsPage implements OnInit {
 
 
-  tvs: any = [
-    {
-      id: 1,
-      brand: "Samsung",
-      model: "TQ55S90DAEXXC",
-      inches: "65",
-      scre: "3840 x 2160"
-    },
-    {
-      id: 2,
-      brand: "LG",
-      model: "OLED83C34LA",
-      inches: "55",
-      scre: "3840 x 2160"
-    }
-  ]
+  tvs: any = []
 
-  constructor() { }
+  constructor(private TvService: TvService) {}
 
-  ngOnInit() {
+  ngOnInit(){
+    this.getAllTvs();
+  }
+
+  getAllTvs(){
+
+    this.TvService.getTv().subscribe((response: any) => {
+      this.tvs = response;
+    });
+
   }
 
 }
+    // {
+    //   id: 1,
+    //   brand: "Samsung",
+    //   model: "TQ55S90DAEXXC",
+    //   inches: "65",
+    //   scre: "3840 x 2160"
+    // },
+    // {
+    //   id: 2,
+    //   brand: "LG",
+    //   model: "OLED83C34LA",
+    //   inches: "55",
+    //   scre: "3840 x 2160"
+    // }
+  // ]
+
+  // constructor() { }
+
+  // ngOnInit() {
+  // }
+
+
